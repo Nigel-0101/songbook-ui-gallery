@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="200套歌单版式的脱敏视觉探索：简洁版、美化版与动效版，在线浏览和体验。"><title>歌单模板集 · 脱敏演示</title><link rel="stylesheet" href="assets/gallery.css"></head>
+<body>
+<a class="skip" href="#catalog-search">跳到模板搜索</a>
+<header class="masthead"><div class="mast-inner"><div class="brand"><img src="assets/avatar.svg" width="72" height="72" alt="演示图标"><div><p class="signature">SONGBOOK / DESIGN STUDIES</p><h1>歌单模板集<span>脱敏演示</span></h1></div></div><div class="intro"><p>已经做好的方案，都在这里。</p><p class="intro-small">先看版式，再点开体验。共<span data-total>50</span>套，保留每一版的完整页面与交互。</p></div></div></header>
+<main id="main">
+<div class="collection-bar"><div class="tabs" role="group" aria-label="模板分类"><button data-group="all" aria-pressed="true">全部 <b>50</b></button><button data-group="simple" aria-pressed="false">简洁版 <b>10</b></button><button data-group="artful" aria-pressed="false">美化版 <b>30</b></button><button data-group="motion" aria-pressed="false">动效版 <b>10</b></button></div><div class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><input id="catalog-search" type="search" aria-label="搜索模板名称、编号或结构" placeholder="搜索名称、编号或结构"><button id="clear-search" aria-label="清空模板搜索" title="清空搜索">×</button></div></div>
+<div class="collection-meta"><p id="result-count" role="status" aria-live="polite">正在整理模板…</p><p class="new-policy"><span class="new-dot"></span>新模板置顶7天 · 到期自动恢复普通排序</p></div>
+<section class="catalog" id="catalog" aria-label="全部模板"></section>
+<section id="empty" hidden><h2>没有找到匹配的模板</h2><p>换一个名称，或清除搜索和分类。</p><button id="reset-all">显示全部模板</button></section>
+<noscript><div class="noscript">请使用支持JavaScript的浏览器打开此页面，才能浏览和体验模板。</div></noscript>
+</main>
+<footer class="site-footer"><div><strong><span data-total>50</span>种歌单的样子，等你慢慢挑。</strong><p id="footer-counts">简洁版10套 · 美化版30套 · 动效版10套</p></div><p>视觉探索，未替换正式歌单。<br>模板中的“未上线”指未应用到正式站；没有歌曲音频播放。</p><p>探索稿，未上线 · 200套 · 全部脱敏<br>新模板加入7天内置顶</p></footer>
+<dialog id="viewer" aria-labelledby="viewer-title">
+<div class="viewer-header"><button id="close-viewer" class="back">← 返回总览</button><div class="viewer-name"><span id="viewer-category"></span><h2 id="viewer-title"></h2></div><div class="viewer-navigation"><button id="previous-template" aria-label="上一个模板">← 上一套</button><button id="next-template" aria-label="下一个模板">下一套 →</button></div></div>
+<div class="viewer-tools"><div class="device-switch" role="group" aria-label="预览尺寸"><button data-device="desktop" aria-pressed="true">桌面 1440</button><button data-device="mobile" aria-pressed="false">手机 390</button></div><p id="viewer-tip">这里是完整网页，可以点击、滚动与点歌。</p><div class="file-actions"><button id="open-template">独立打开 ↗</button><button id="download-template">保存这套HTML ↓</button></div></div>
+<div id="preview-stage"><div id="frame-shell"><iframe id="template-frame" title="模板完整交互预览" allow="clipboard-write" referrerpolicy="no-referrer"></iframe></div><p id="loading-template" role="status">正在打开模板…</p></div>
+<div class="viewer-foot"><span id="viewer-concept"></span><span>稳定阅读优先 · 分组和编号辅助定位</span></div>
+</dialog>
+<div id="library-toast" role="status" aria-live="polite"></div>
+<script id="library-data" type="application/json">{}</script>
+<script src="assets/catalog.js"></script><script src="assets/catalog-core.js"></script><script src="assets/gallery.js"></script>
+</body></html>
